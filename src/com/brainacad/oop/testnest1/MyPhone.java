@@ -29,6 +29,13 @@ public class MyPhone {
         System.out.print("Calling to: "+phoneBook.phoneNumbers[index]);
     }
 
+    public class Camera{}
+    public class Bluetooth{}
+    public class PowerOnButton{}
+    public class PhoneBattery{}
+    public class PhoneDisplay{}
+    public class PhoneSpeaker{}
+
     public class MyPhoneBook {
         private PhoneNumber[] phoneNumbers;
         private int index;
