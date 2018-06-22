@@ -1,6 +1,7 @@
 package com.brainacad.oop.testnest1;
 
 import java.util.Arrays;
+import java.util.Comparator;
 
 public class MyPhoneBook {
     private PhoneNumber[] phoneNumbers = new PhoneNumber[10];
@@ -14,6 +15,22 @@ public class MyPhoneBook {
         for (PhoneNumber phoneNumber : phoneNumbers) {
             System.out.println(phoneNumber);
         }
+    }
+    public void sortByName(){
+        Arrays.sort(phoneNumbers, new Comparator<PhoneNumber>() {
+            @Override
+            public int compare(PhoneNumber o1, PhoneNumber o2) {
+                return o1.getName().compareTo(o2.getName());
+            }
+        });
+    }
+    public void sortByPhoneNumber(){
+        Arrays.sort(phoneNumbers, new Comparator<PhoneNumber>() {
+            @Override
+            public int compare(PhoneNumber o1, PhoneNumber o2) {
+                return o1.getPhone().compareTo(o2.getPhone());
+            }
+        });
     }
 
     public static class PhoneNumber{
