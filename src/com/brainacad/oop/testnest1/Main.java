@@ -26,5 +26,10 @@ public class Main {
 
         phoneBook.sortByName();
         phoneBook.printPhoneBook();
+
+        System.out.println("--------------------LabWork_2.12.3------------------------");
+        MyPhone myPhone = new MyPhone();
+        myPhone.swichOn();
+        myPhone.call(1);
     }
 }
